@@ -1,0 +1,34 @@
+.btn{
+    background-color: #3498DB;
+    color: white;
+}
+.style-vector h2{
+    margin-left: 10%;
+    margin-top: -10%;
+}
+.section-founder{
+    margin-top: -1px;
+}
+.founder-container{
+    background:  #3498DB33;
+}
+.peopleperTask-idea .row{
+    flex-wrap: nowrap;
+}
+.peopleperTask-idea{
+    background-image: url('../images/Frame\ 269.svg');
+    background-size: cover;
+    width: 100%;
+}
+
+/* Create a CSS class for dark mode styles */
+.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Light text color for better readability */
+  }
+  
+  /* Modify specific elements for dark mode */
+  .dark-mode a {
+    color: #3a8bd9; /* Links color in dark mode */
+  }
+  
