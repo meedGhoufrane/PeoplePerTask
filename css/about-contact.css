@@ -15,24 +15,45 @@
 .peopleperTask-idea .row{
     flex-wrap: nowrap;
 }
-.peopleperTask-idea{
+/* .peopleperTask-idea{
     background-image: url('../images/Frame\ 269.svg');
     background-size: cover;
     width: 100%;
-}
+} */
 
-/* Create a CSS class for dark mode styles */
+/* Styles for dark mode */
 .dark-mode {
     background-color: #121212; /* Dark background color */
     color: #ffffff; /* Light text color for better readability */
-  }
-  
-  /* Modify specific elements for dark mode */
-  .dark-mode a {
-    color: #3a8bd9; /* Links color in dark mode */
-  }
+}
+
+/* Modify specific elements for dark mode */
+.dark-mode a {
+    color: #ffffff; /* Links color in dark mode */
+}
+
+/* Footer section styles for dark mode */
+.dark-mode .cta-text span {
+    color: #ffffff;
+}
+.dark-mode .footer-section p {
+    color: #ffffff; /* Dark text color for better readability */
+}
+.dark-mode .footer-section ul li a{
+    color: #ffffff;
+}
+
+/* End of dark mode styles */
+
   
   /* contact page */
   .video-container{
-    width: 100%;
+    width: 50%;
   }
+
+@media screen and (max-width : 992px) {
+    #dark-mode-toggle.fas.fa-moon.ps-3{
+        padding-top: 20px;
+        padding-left: 0px !important;
+    }
+}
