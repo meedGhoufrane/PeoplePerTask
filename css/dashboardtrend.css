@@ -1,0 +1,79 @@
+.content{
+    height: auto;
+    background-color: #FAFAFA;
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.content h1{
+    font-size: 30px;
+}
+.content h2{
+    font-size: 20px;
+}
+.filter{
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.filter h2{
+    margin-bottom: 0;
+    padding-right: 10px;
+}
+.filter button{
+ background-color: rgb(198, 221, 236);   
+ width: 100px;
+ padding: 10px;
+}
+.cardss{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#price2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+#value2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+#satisfaction2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.card{
+    width: 250px !important;
+    background-color: white;
+    height: 250px;
+    gap: 10px !important;
+    cursor: pointer;
+}
+.card img{
+    border-radius: 10px;
+    height: 130px;
+}
+.freelancer-profil{
+    display: flex;
+    justify-content: space-between;
+}
+.freelancer-profil img{
+    height: 30px;
+}
+.part1{
+    display: flex;
+    gap: 5px;
+}
+#all{
+    background-color: rgb(111, 149, 173);
+}

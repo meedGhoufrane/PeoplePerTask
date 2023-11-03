@@ -1,0 +1,10 @@
+#table-container{
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.users-header {
+    text-align: center;
+    margin-top: 100px !important;
+    color: hsl(225, 73%, 57%) !important;
+}
