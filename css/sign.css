@@ -42,11 +42,7 @@ section {
     align-items: flex-start;
 }
 
-.sign-in {
-    /* width: 50%;
-    z-index: 2;
-    /* margin: 38px 111px; */
-  */}
+
   .sign-in {
     position: absolute;
     width: 100%;
@@ -143,4 +139,55 @@ section {
 
 .icons {
     margin: 20px 0;
+}
+.mobile{
+    display: none;
+}
+
+.dark-mode {
+    background-color: #121212; 
+    color: #ffffff; 
+}
+
+
+.dark-mode a {
+    color: #ffffff; 
+}
+
+
+.dark-mode .cta-text span {
+    color: #ffffff;
+}
+.dark-mode .footer-section p {
+    color: #ffffff; 
+}
+.dark-mode .footer-section ul li a{
+    color: #ffffff;
+}
+.dark-mode .container-sign{
+    
+    background-color: black;
+}
+
+/* / End of dark mode styles */
+@media screen and (max-width : 992px) {
+    #dark-mode-toggle.fas.fa-moon.ps-3{
+        padding-top: 20px;
+        padding-left: 0px !important;
+    }
+    #dark-mode-toggle.fas.ps-3.fa-sun{
+        padding-top: 20px;
+        padding-left: 0px !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .overlay-right, .overlay {
+        display: none;
+    }
+    .mobile {
+        display: inline-block;
+    }
+    .sign-up{
+        left: -159px;
+    }
 }
