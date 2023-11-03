@@ -42,35 +42,39 @@
     </header>
     <div class=" section-contact container pt-5">
         <div class="row">
-          <div class="col-md-6">
-            <h2>Contact Us</h2>
+          <div class="col-md-6 mb-4">
+            <h2 class="style" style="color: #6298f3;">Contact <span class="style" style="color: #f39c12;">Us</span></h2>
             <p>Feel free to contact us any time. We will get back to you as soon as we can!</p>
             <form action="/contact" method="post">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control border-bottom border-0 border" id="name" name="name" placeholder="Enter your name">
+              <div class="form-group py-3">
+                <label for="name">Name<span class="span-validation ps-3 text-danger" id="name-error"></span></label>
+                <input type="text" class="form-control border-bottom border-0 border py-3" id="name" onkeyup="validateName()" name="name" placeholder="Enter your name">
+                
               </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control border-bottom border-0 border" id="email" name="email" placeholder="Enter your email address">
+              <div class="form-group py-3">
+                <label for="email">Email<span class="span-validation ps-3 text-danger" id="email-error"></span></label>
+                <input type="email" class="form-control border-bottom border-0 border py-3" id="email" onkeyup="validateEmail()" name="email" placeholder="Enter your email address">
+                
               </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" class="form-control border-bottom border-0 border" id="phone" name="phone" placeholder="Enter your phone number">
+              <div class="form-group py-3">
+                <label for="phone">Phone Number<span class="span-validation ps-3 text-danger" id="phone-error"></span></label>
+                <input type="tel" class="form-control border-bottom border-0 border py-3" id="phone" onkeyup="validatePhone()" name="phone" placeholder="Enter your phone number">
+                
               </div>
-              <div class="form-group">
+              <div class="form-group py-3">
                 <label for="subject">Subject</label>
-                <select class="form-control border-bottom border-0 border" id="subject" name="subject">
+                <select class="form-control border-bottom border-0 border py-3" id="subject" name="subject">
                   <option value="general">General Inquiry</option>
                   <option value="sales">Sales Inquiry</option>
                   <option value="support">Support Inquiry</option>
                 </select>
               </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control border-bottom border-0 border" id="message" name="message" rows="3" placeholder="Enter your message here"></textarea>
+              <div class="form-group py-3">
+                <label for="message">Message<span class="span-validation ps-3" id="message-error"></span></label>
+                <textarea class="form-control border-bottom border-0 border py-3" id="message" onkeyup="validateMessage()" name="message" rows="3" placeholder="Enter your message here"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Send</button>
+              <button onclick="return validateForm()" type="submit" class="btn btn-primary py-3 ">Send</button>
+              <span class="span-validation ps-3 text-danger" id="send-error"></span>
             </form>
         </div>
         <div class="col-md-6 video-container embed-responsive embed-responsive-16by9 d-flex align-items-center">

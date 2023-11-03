@@ -15,3 +15,31 @@ darkModeToggle.addEventListener('click', function () {
     darkModeToggle.classList.add('fa-moon');
   }
 });
+
+// fad section
+const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.classList.toggle('hidden');
+        });
+    });
+// end faq section
+
+// modal-contact
+const modal = document.getElementById("myModal");
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+function openModal() {
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
+
+openModalBtn.addEventListener("click", openModal);
+closeModalBtn.addEventListener("click", closeModal);
+
+// end modal-contact
