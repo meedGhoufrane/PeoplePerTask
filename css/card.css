@@ -1,24 +1,158 @@
+
+    
+/* Position the image container (needed to position the left and right arrows) */
+.container-img {
+  position: relative;
+  width: 90%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  /* border-radius: 0 3px 3px 0; */
+  border-radius: 50%;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* border-radius: 3px 0 0 3px; */
+  border-radius: 50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(243, 156, 18, 1);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row-css:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+ 
+.row-css{
+  padding: 8px 0px;
+}
+.FAQ{
+  min-height: 300px;
+  width: 65%;
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq{
+  max-width:70rem ;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom:0.2rem solid rgb(0, 0, 0) ;
+  cursor: pointer;
+}
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question h3{
+  font-size: 1.8rem;
+}
+.answer p{
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+.faq.active .answer{
+  max-height: 300px;
+}
+.faq.active svg{
+  transform: rotate(180deg);
+}
+svg{
+  transition: transform 0.5s ease-in;
+}
+.prev-btn,
+.next-btn{
+  cursor: pointer;
+}
+.card-slider{
+  overflow: hidden;
+}
 .slider-container {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
+  position: relative;
+}
+.card {
+  flex: 0 0 50%;
+  /* box-sizing: border-box; */
+  /* padding: 20px; */
+  /* text-align: center; */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+@media screen and (max-width:987px) {
+  #package{
+    display: none;
   }
-  .slider {
-    display: flex;
-    transition: all 0.5s;
-  }
-  .slide {
-    min-width: 100%;
-  }
-  .gallery-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .thumbnail {
-    /* width: 100px;
-    height: 60px; */
-    /* margin: 0 5px; */
-    cursor: pointer;
-  }
+}
