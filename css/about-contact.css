@@ -154,3 +154,8 @@
         padding-left: 0px !important;
     }
 }
+@media screen and (max-width : 768px){
+    .Faq-section h2{
+        padding-left: 0em;
+    }
+}
