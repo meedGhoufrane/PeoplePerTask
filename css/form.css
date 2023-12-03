@@ -1,0 +1,49 @@
+
+.form_submit{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.crud_inner{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+}
+.crud_form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 20px;
+    align-items: center;
+    row-gap: 70px;
+
+}
+form div{
+   width: 45%;
+   text-align: center;
+}
+form input{
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #4169E1;
+    color: white;
+}
