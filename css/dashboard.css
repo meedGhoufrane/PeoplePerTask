@@ -74,7 +74,6 @@ color: white;
 #nav-bar{
     display: flex;
     align-items: center;
-    padding-top: 15px;
     height: auto;
     gap: 30px;
     justify-content: flex-end;

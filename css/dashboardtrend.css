@@ -77,3 +77,33 @@
 #all{
     background-color: rgb(111, 149, 173);
 }
+
+
+
+.dark-mode {
+    background-color: #121212;  
+    color: #ffffff;
+}
+
+/* / Modify specific elements for dark mode / */
+.dark-mode a {
+    color: #ffffff; 
+}
+.dark-mode .card-body a{
+    
+    color: #121212;
+}
+.dark-mode .card{
+    
+    color: #121212;
+}
+.dark-mode .card-header{
+    color: #121212;
+}
+.dark-mode .badge{
+    color: #3498DB;
+}
+.dark-mode .form-control{
+    color: #ffffff;
+    background: #121212;
+}

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tr:nth-child(odd){
+    background-color: aqua;
+}

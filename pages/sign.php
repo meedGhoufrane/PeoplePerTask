@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/sign.css">
-    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/sign.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
     <title>PeoplePerTask</title>
 </head>
 <body>
@@ -13,23 +14,23 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-              <a class="navbar-brand" href="index.html"><img src="images/PeoplePerTask.png" style="width: 12rem;" alt=""></a>
+              <a class="navbar-brand" href="index.php"><img src="../images/PeoplePerTask.png" style="width: 12rem;" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars" style="color: #6298f3;"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: 0 auto;">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.php">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="search.html">Searsh</a>
+                    <a class="nav-link active" aria-current="page" href="search.php">Searsh</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                   </li>
                 </ul>
                 <form class="d-flex nav_btn" role="search">
@@ -114,48 +115,61 @@
         <div class="sign-up">
             <h2>Create Account</h2>
             <div class="icons">
-                <img src="/images/fb.svg">
-                <img src="/images/chrome.svg">
-                <img src="/images/in.svg"> 
+                <img src="../images/chrome.svg">
+                <img src="../images/in.svg"> 
             </div>
             <span>or use your email for registration</span>
-            <form class="w-50">
+            <form class="w-50" method="POST" action ="../fillesign/singqry.php" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="Name" style="font-size: 12px;" class="form-label">Name</label>
-                    <input type="text" style="width: 100%;" class="form-control border-bottom border-0 border" id="Name" aria-describedby="emailHelp">
+                    <input type="text" style="width: 100%;" class="form-control border-bottom border-0 border" Name="Name" id="Name" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label" style="font-size: 12px;">Email</label>
-                    <input type="email" style="width: 100%;" class="form-control border-bottom border-0 border" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" style="width: 100%;" class="form-control border-bottom border-0 border" Name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
+                    <label for="img" class="form-label">choose image for your profile  </label>
+                    <input type="file" class="form-control" accept="image/png , image/jpg, image/jpeg"  name="img" id="img">
+                </div>  
+                <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label" style="font-size: 12px;">Password</label>
-                    <input type="password" style="width: 100%;" class="form-control border-bottom border-0 border" id="exampleInputPassword1">
+                    <input type="password" style="width: 100%;" class="form-control border-bottom border-0 border" Name="Password" id="exampleInputPassword1">
                 </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label" style="font-size: 12px;">repeat ur Password</label>
+                    <input type="password" style="width: 100%;" class="form-control border-bottom border-0 border" Name="comfirmPassword" id="exampleInputPassword2">
+                </div>
+                <div class="mb-3">
+                    <input type="radio" style="" class="" value="client" Name="role" id="">
+                    <label for="exampleInputPassword1" class="form-label" style="font-size: 12px;">client </label>
+                    <input type="radio" style="" class="" value="freelancer" Name="role" id="">
+                    <label for="exampleInputPassword1" class="form-label"  value="freelancer" style="font-size: 12px;">freelancer</label>
+                </div>
+               
                 <span class="mobile"><a href="signInMobile.html">sign in</a></span>
-                <button type="submit" class="btn text-white rounded-pill btn-outline-primary" style="background-color: #3498DB; width:164px; height:39px" id="submit">Submit</button> 
+                <button type="submit"  class="btn text-white rounded-pill btn-outline-primary" style="background-color: #3498DB; width:164px; height:39px" id="submit">Create account</button> 
             </form>
         </div>
         <div class="sign-in">
             <h2>Sign in</h2>
             <div class="icons">
-                <img src="/images/fb.svg">
-                <img src="/images/chrome.svg">
-                <img src="/images/in.svg"> 
+                <img src="../images/chrome.svg">
+                <img src="../images/in.svg"> 
             </div>
             <span>or use your account</span>
-            <form class="w-50">
+            <form class="w-50" method="POST" action ="../fillesign/login.php" >
                 <div class="mb-3">
                     <label for="exampleInputEmail2" class="form-label" style="font-size: 12px;">Email</label>
-                    <input type="email" style="width: 80%;" class="form-control border-bottom border-0 border" id="exampleInputEmail2" aria-describedby="emailHelp">
+                    <input type="email" style="width: 80%;" class="form-control border-bottom border-0 border" name="emaillog" id="emaillog" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword2" class="form-label" style="font-size: 12px;">Password</label>
-                    <input type="password" style="width: 80%;" class="form-control border-bottom border-0 border" id="exampleInputPassword2">
+                    <input type="password" style="width: 80%;" class="form-control border-bottom border-0 border" name="passwordlog" id="passwordlog">
                 </div>
-                <span style="display: block;">Forgot your password?</span>
+                <!-- <span style="display: block;">Forgot your password?</span> -->
                 <span class="mobile"><a href="signmobile.html">sign up</a></span>
-                <button type="submit" class="btn text-white rounded-pill btn-outline-primary" style="background-color: #3498DB; width:164px; height:39px">Submit</button> 
+                <button type="submit" name= "submit" class="btn text-white rounded-pill btn-outline-primary" style="background-color: #3498DB; width:164px; height:39px">login</button> 
             </form>
         </div>
         <div class="overlay-container">
@@ -272,8 +286,8 @@
         </div>
     </footer>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/sign.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sign.js"></script>
     <script src="https://kit.fontawesome.com/e80051e55f.js" crossorigin="anonymous"></script>
 </body>
 </html>

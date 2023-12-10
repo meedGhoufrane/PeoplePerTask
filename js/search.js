@@ -26,73 +26,73 @@ const swiper = new Swiper(".swiper", {
       {
           id:1,
           name : "Full stack developer",
-          src: "images/Frame2.png",
+          src: "../images/Frame2.png",
           desc : "I will build your professional wix website with unlimited revisions"
       },
       {
           id:2,
           name : "UX",
-          src: "images/Frame88.png",
+          src: "../images/Frame88.png",
           desc : "Lorem ipsum dolor, sit amet consectetur adipisicing."
       },
       {
           id:3,
           name : "Back end developer",
-          src: "images/Frame2.png",
+          src: "../images/Frame2.png",
           desc : "Lorem ipsum dolor, sit amet consectetur adipisicing "
       },
       {
           id:4,
           name : "Design figma",
-          src: "images/Frame5.png",
+          src: "../images/Frame5.png",
           desc : "I will design, redesign, update or fix webflow website"
       },
       {
           id:5,
           name : "Wordpress",
-          src: "images/Frame6.png",
+          src: "../images/Frame6.png",
           desc : "I will design clean and responsive wordpress website."
       },
       {
           id:6,
           name : "Front end developer",
-          src: "images/Frame2.png",
+          src: "../images/Frame2.png",
           desc : "I will develop responsive website with html css and js"
       },
       {
           id:7,
           name : "Front end developer",
-          src: "images/Frame2.png",
+          src: "../images/Frame2.png",
           desc : "I will develop responsive website with html css and js"
       },
       {
           id:8,
           name : "Front end developer",
-          src: "images/Frame2.png",
+          src: "../images/Frame2.png",
           desc : "I will develop responsive website with html css and js"
       },
       {
           id:9,
           name : "Front end developer",
-          src: "images/Frame2.png",
+          src: "../images/Frame2.png",
           desc : "I will develop responsive website with html css and js"
       },
       {
           id:10,
           name : "Front end developer",
-          src: "images/Frame2.png",
+          src: "../images/Frame2.png",
           desc : "I will develop responsive website with html css and js"
       },
       {
           id:11,
           name : "front end developer",
-          src: "images/Frame2.png",
+          src: "../images/Frame2.png",
           desc : "I will develop responsive website with html css and js"
       },
       {
           id:12,
           name : "front end developer",
-          src: "images/Frame2.png",
+          src: "../images/Frame2.png",
           desc : "I will develop responsive website with html css and js"
       },
 
@@ -112,7 +112,7 @@ const swiper = new Swiper(".swiper", {
          document.getElementById("card").innerHTML += `
           <div class="col-md-4 mt-3" >
           <div class="card card-hover">
-          <a href="../course-single.html" class="card-img-top"><img src="${curarra[i].src}" alt="" class="rounded-top-md card-img-top"></a>
+          <a href="../course-single.php" class="card-img-top"><img src="${curarra[i].src}" alt="" class="rounded-top-md card-img-top"></a>
           <!-- Card Body -->
           <div class="card-body">
           <div class="d-flex justify-content-between align-items-center mb-3">
