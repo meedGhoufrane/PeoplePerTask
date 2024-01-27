@@ -8,6 +8,8 @@ if(!isset($_SESSION['valid_seesion'])){
 
 <?php
 REQUIRE 'connection.php';
+//REQUIRE 'connection.php';
+
 
 if(isset($_POST['submit'])){
     $skills = $_POST['skills'];
